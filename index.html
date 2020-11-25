@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles5.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+
+
+    <body>
+
+
+<div id="narrative">
+    <h1>Making Sense of Indian government dashboards</h1>
+    <div id="real-time" class="definition">
+    <h2>Real time</h2>
+    <p>
+        State dashboards <a href="#" id="high-frequency-selector">perform their liveness</a>, giving the impression of a stream of continually updated data, like the information displays at airports or the weather report. The impressive numbers of state projects are often rendered in a typeface that resembles the LCD numerals of digital clocks, as if the metrics of development are a measure of time. Every time a dashboard is loaded, numbers and charts spring up, suggesting that the data has arrived fresh from the world. Yet <a href="#" id="low-frequency-selector">if we dig deeper</a>, we find that some of these are last month's numbers, some are from six months ago, some even a year old. "Real time" is a flexible signifier.
+    </p>
+        </div>
+    <div id="leapfrogging"  class="definition">
+        <h2>Leapfrogging</h2>
+    <p>
+        State dashboards <a href="#" id="high-leapfrog-selector">perform their liveness</a>, giving the impression of a stream of continually updated data, like the information displays at airports or the weather report. The impressive numbers of state projects are often rendered in a typeface that resembles the LCD numerals of digital clocks, as if the metrics of development are a measure of time. Every time a dashboard is loaded, numbers and charts spring up, suggesting that the data has arrived fresh from the world. Yet "real time" is a flexible signifier. <a href="#" id="low-leapfrog-selector">If we dig deeper</a>, we find that some of these are last month's numbers, some are from six months ago, some even a year old. This is often still a high frequency of updates for a state so large and slow, but it's not quite as temporally intense as it appears.
+    </p>
+        </div>
+
+        
+        </div>
+
+
+        <div id="container">
+
+            <div class="grid-object high-frequency" id="meity">
+                <img src="meity-screen2gif.gif">
+            </div>
+
+
+
+            <div class="grid-object high-frequency" id="transforming-india">
+                <img src="transforming%20india%20performance.gif">
+
+
+            </div>
+
+            
+                        <div class="grid-object high-frequency" id="digital-village">
+                <img src="Digital-village.gif">
+
+
+            </div>
+            
+            <div class="grid-object low-frequency" id="adp-periodicity">
+                <img src="champtions-of-change-periodicity.jpg">
+
+
+            </div>
+
+
+
+       <!--     <div class="grid-container" id="grid-3">
+                <img src="Aadhaar.gif" id="aadhaar" class="lazy">
+
+                <div id="capt-3" class="caption">
+                    <p class="howto">How To</p><p>Find out states with lowest Aadhaar enrollment</p>
+                    <a href="https://www.uidai.gov.in/aadhaar_dashboard/index.php">Go to Site</a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="grid-container" id="grid-4">
+                <img src="Digital-village.gif" id="digital-village" class="lazy">
+
+                <div id="capt-4" class="caption"><p class="howto">How To</p><p>Retrieve realt-time data for nationwide Digital Village project</p>                <a href="https://meity.dashboard.nic.in/">Go to Site</a></div>
+
+            </div>
+
+
+            <div class="grid-container" id="grid-5">
+                <img src="Digital-village.gif" id="digital-village" class="lazy">
+
+                <div id="capt-4" class="caption"><p class="howto">How To</p><p>Retrieve realt-time data for nationwide Digital Village project</p>                <a href="https://meity.dashboard.nic.in/">Go to Site</a></div>
+                <div id="capt-4-alt" class="caption">Among the bar charts, they find another cow welfare scheme</div>
+
+            </div>
+
+            <div class="grid-container" id="grid-6">
+                <img src="Digital-village.gif" id="digital-village" class="lazy">
+
+                <div id="capt-4" class="caption"><p class="howto">How To</p><p>Retrieve realt-time data for nationwide Digital Village project</p>                <a href="https://meity.dashboard.nic.in/">Go to Site</a></div>
+                <div id="capt-4-alt" class="caption">Among the bar charts, they find another cow welfare scheme</div>
+            </div>-->
+
+
+
+        </div>
+
+ <!--       <div id="sliders-container">
+            <div>
+                <div>Scroll</div>
+                <div class="slider" id="slider0"></div>
+            </div>
+            <div>
+
+                <div>Border Security</div>
+                <div class="slider" id="slider"></div>
+            </div>
+
+
+            <div>
+                <div>Informational?</div>
+                <div class="slider" id="slider2"></div>
+            </div>
+
+
+
+        </div>-->
+        
+        
+    </body> 
+
+    <script>
+
+
+
+            $(".grid-object").click(function(){
+                $(this).toggleClass("big")
+            });
+        
+        $("#high-frequency-selector").click(function(){
+            $(".grid-object:not(.high-frequency)").removeClass("active");
+            $(".high-frequency").toggleClass("active");
+            $("a:not(#high-frequency-selector)").removeClass("active-link");
+            $(this).toggleClass("active-link");
+        });
+        
+                $("#low-frequency-selector").click(function(){
+            $(".low-frequency").toggleClass("active");        
+                            $(this).toggleClass("active-link");
+
+                });
+
+        
+        $("#narrative").scroll(function(){
+            var scroll = $("#narrative").scrollTop();
+            
+            
+            if ( $("#real-time").offset().top < $(window).height() ) {
+                console.log("scrolled");
+                $("body").addClass("bastar");
+            }
+            else if ( $("#real-time").offset().top > $(window).height() ) {
+                $("body").removeClass("bastar");
+            }
+            
+        })
+        
+
+    </script>

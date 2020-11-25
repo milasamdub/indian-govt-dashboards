@@ -1,0 +1,314 @@
+body {
+    padding: 0px;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background:black;
+    transition: background 0.5s;
+}
+
+.bastar {
+        background: url(bastar-background.jpg);
+        background-size: cover;
+        transition: background 0.5s;
+
+
+
+}
+
+#container {
+    width: 80vw;
+height: 100vh;
+display: flex;
+flex-direction: ;
+justify-content: center;
+align-items: center;  
+    position: relative;
+}
+
+#narrative {
+width: 20vw;
+height: calc(100vh - 40px);
+    background-color: #eee;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+
+h1 {
+    font-family: times;
+    font-size: 30px;
+    margin:0;
+    font-weight: 500;
+    width:100%;
+    padding: 20px 0 20px 0;
+    color: #333;
+    text-align: left;
+/*    display: none;*/
+    height: 100vh;
+}
+
+
+
+
+h2 {
+            font-size: 18px;
+        font-weight: 300;
+    color:black;
+
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+.definition {
+    margin-bottom: 100px;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 20px 0;
+    color: grey;
+    font-family: verdana;
+    background-color:none;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+
+.subtitle2 {
+    background-color:#eee;
+    border-bottom: none;
+    border: none;
+    color: black;
+}
+
+
+
+.subtitle #total {
+/*
+    position: absolute;
+    right: 5%;
+*/
+    line-height: 20px;
+    color: #222;
+}
+
+.subtitle #total #number {
+    font-size: 30px;
+    background-color: lightcoral;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+p {
+    margin: 0; padding: 0;
+    font-size: 18px;
+}
+.grid-object {
+        margin-top:0;
+    box-sizing: content-box;
+    width:600px;
+    height: auto;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.grid-object:hover {
+    border: 5px solid lightgreen;
+}
+
+
+
+
+.grid-object:nth-of-type(1) {
+    width: 700px;
+    left: 100px;
+    top:200px;
+}
+
+
+.grid-object:nth-of-type(2) {
+    width: 500px;
+    top: 100px;
+    left: 400px;
+}
+
+
+.grid-object:nth-of-type(3) {
+    width: 600px;
+    top: 300px;
+    left: 250px;
+}
+
+
+
+#grid-3 {
+    position: absolute;
+    width: 600px;
+    top: 0px;
+    left: 900px;
+}
+
+#grid-4 {
+    position: absolute;
+    width: 600px;
+    top: -60px;
+    left: 700px
+}
+
+
+
+
+
+
+
+
+
+.caption {
+    font-family: verdana;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: .9px blue;
+    position: fixed;
+    z-index:1100;
+    bottom:40px;
+    text-align: center;
+    display: none;
+
+}
+
+
+.caption {
+    -webkit-text-stroke: 0px;
+    color: black;
+    bottom: auto;
+    top: 40px;
+    
+        padding: 2em;
+    background:#fff;
+    border: 0px solid black;
+    padding-bottom: 3em;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+
+.caption a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    display: block;
+    position: absolute;
+    right: 80px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.caption a::after {
+    content: "";
+    background-image: url("dash_back_arrow.png");
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 10000;
+    margin-left:10px;
+}
+
+.caption a:visited {
+    color: black;
+}
+
+.howto {
+    text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left:20px;
+    color: gray;
+}
+
+
+.active {
+    display: block;
+}
+
+img {
+
+    width: 100%;
+    height: auto;
+}
+
+/*
+.slider {
+    width: 400px;
+    position:absolute;
+    left: 200px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#sliders-container {
+    position: fixed;
+    bottom: 100px;
+    width:650px;
+    
+    background-color: #eee;
+padding: 40px;
+}
+*/
+
+
+
+
+
+
+
+
+.big {
+    width: 800px !important;
+    z-index: 1000;
+    
+    
+}
+
+
+.active {
+    display: block;
+}
+
+.active-link {
+    background: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#background-text {
+    padding: 100px;
+    font-size: 36px;
+    color: #999;
+}
+
+a, a:visited, a:active {
+    color: green;
+    outline: none;
+}
+
+p {
+    user-select: none;
+    cursor: default;
+}
