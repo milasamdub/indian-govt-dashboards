@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles5.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+
+<body>
+
+    <a href="index.html" id="home"><img src="home.png"></a>
+
+    <div id="narrative">
+        <div id="title" class="definition">
+            <h1>Keywords for Indian government dashboards</h1>
+        </div>
+        <div id="real-time" class="definition">
+            <h2>Real time</h2>
+            <p>
+                State dashboards <a href="#" id="high-frequency-selector">perform their liveness</a>, as if the metrics of development were a measure of time. But if you <a href="#" id="low-frequency-selector">dig deeper</a>, you find that some of these are last month's numbers, some are from six months ago, some are even a year old.</p>
+        </div>
+        <div id="leapfrogging" class="definition">
+            <h2>Leapfrogging</h2>
+            <p>
+                The idea that developing nations can "skip" stages of development, as if history was linear and technology could take you from 3 to 8.
+            </p>
+            <div id="leapfrogging-buttons">
+            <button id="trad-dev-selector">3</button><button id="leapfrog-selector">8</button>
+            </div>
+            <div id="bill-gates" class="img-block">
+                <img src="bill-gates-leapfrog.jpg"><a class="img-link" id="bill-gates-link" href="https://cio.economictimes.indiatimes.com/news/strategy-and-management/technology-can-help-india-leapfrog-into-inclusive-growth-bill-gates/64026178">(reference: Economic Times)</a></div>
+        </div>
+
+        <div id="competition" class="definition">
+            <h2>Competition</h2>
+            <p>Centralising information, dashboards enable the comparison of departments, districts or municipalities against each other.  They do this by assigning <a href="#" id="star-rating-selector">star ratings</a>, <a href="#" id="ranking-selector">calculating composite scores and assigning ranks</a>, or through <a href="#" id="heatmap-selector">heatmaps</a>.
+            According to the proponents of dashboards, this comparison is imagined as a means of leveraging competition to make government more efficient.</p>
+            <div id="niti-book" class="img-block"><img id="niti-book-screenshot" src="competitive-federalism-quote-niti-2018.jpg"><a id="niti-book-link" class="img-link" href="https://niti.gov.in/sites/default/files/2018-12/AspirationalDistricts-Book.pdf">(reference: NITI Aayog 2018)</a></div>
+        </div>
+
+        
+         <div id="bastar" class="definition">
+                         <h2>Extraction</h2>
+             <p>The techno-utopian principles embodied by state dashboards legitimise the extraction of data and other heavier resources. </p>
+                   
+             <div id="resource-map" class="img-block">
+                 
+                 <button id="map-changer"><img src="india-outline.png"></button>
+             </div>
+
+        </div>
+
+        <div id="bodies" class="definition">
+            <button><img id="hand-img" src="aadhaar-finger2.png"><p>More soon</p></button>
+            <p> 
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div id="container">
+
+            <div class="grid-object high-frequency" id="meity">
+                <img src="meity-1.gif">
+                <div class="caption">
+                    <p>Source: <a href="https://meity.dashboard.nic.in/">Ministry of Electronics and Information Technology Dashboard</a></p>
+                </div>
+            </div>
+
+
+
+            <div class="grid-object high-frequency" id="transforming-india">
+                <img src="transforming-india-1.gif">
+                <div class="caption">
+                    <p>Source: <a href="https://transformingindia.mygov.in/performance-dashboard/">Transforming India Dashboard</a></p>
+                </div>
+            </div>
+
+
+            <div class="grid-object high-frequency" id="digital-village">
+                <img src="Digital-village.gif">
+                <div class="caption">
+                    <p>Source: <a href="https://meity.dashboard.nic.in/">Ministry of Electronics and Information Technology Dashboard</a></p>
+                </div>
+
+
+            </div>
+
+            <div class="grid-object low-frequency" id="adp-periodicity">
+                <img src="champtions-of-change-periodicity.jpg">
+
+
+            </div>
+
+
+            <div class="grid-object star-rating" id="gfc">
+                <img src="garbage-free-city-swachh-bharat-urban-dashboard.jpg">
+                <div class="caption">
+                    <p>Source: <a href="http://swachhbharaturban.gov.in/dashboard/">Swachh Bharat Urban Dashboard</a></p>
+                </div>
+            </div>
+
+                   <div class="grid-object star-rating" id="starratings">
+                <img src="star-rating-chart-ap-core.jpg">
+                <div class="caption">
+                    <p>Source: <a href="https://core.ap.gov.in/CMDashBoard/Index.aspx">AP CORE Dashboard</a></p>
+                </div>
+            </div>
+
+             <div class="grid-object ranking" id="coc-bar-chart">
+                <img src="bar-chart-coc.jpg">
+                <div class="caption">
+                    <p>Source: <a href="https://limararuv5gr0sh-nitiprdadw.adb.ap-mumbai-1.oraclecloudapps.com/ords/f?p=100:2">Champions of Change Dashboard</a></p>
+                </div>
+            </div>
+                   <div class="grid-object ranking" id="coc-ranking">
+                <img src="district-rank-coc.jpg">
+                <div class="caption">
+                    <p>Source: <a href="http://103.210.73.67/dashboard">Champions of Change Dashboard</a></p>
+                </div>
+            </div>
+        
+   
+        
+                <div class="grid-object heatmap" id="heatmap">
+                <img src="tribal-affairs-state-performance-map.jpg">
+                <div class="caption">
+                    <p>Source: <a href="https://dashboard.tribal.gov.in/">Ministry of Tribal Affairs Dashboard</a></p>
+                </div>
+            </div>
+
+        
+        <div id="leapfrog-section">
+
+                                    <div class="grid-object grid-object-leapfrog-section trad-dev" id="toilets-sba">
+                <img src="household-toilets-sba.jpg">
+                <div class="caption">
+                    <p>Source: <a href="http://swachhbharaturban.gov.in/dashboard/">Swachh Bharat Urban Dashboard</a></p>
+                </div>
+            </div>
+            
+             <div class="grid-object grid-object-leapfrog-section trad-dev" id="electrification">
+                <img src="electrification.jpg">
+                <div class="caption">
+                    <p>Source: <a href="https://saubhagya.gov.in/dashboard">Saubhagya Dashboard</a></p>
+                </div>
+            </div>
+        
+        <div class="grid-object grid-object-leapfrog-section leapfrog" id="gps-garbage">
+                <img src="gps-livetracking-sdmc-swachh-bharat.jpg">
+                <div class="caption">
+                    <p>Source: <a href="http://esbm.mcdonline.gov.in/SWMS/dashboardurl.htm">South Delhi Municipal Corporation Swachh Bharat Mission Dashboard</a></p>
+                </div>
+            </div>
+
+
+        
+                <div class="grid-object grid-object-leapfrog-section leapfrog" id="streetlights">
+                <img src="streetlights.jpg">
+                <div class="caption">
+                    <p>Source: <a href="https://core.ap.gov.in/CMDashBoard/Index.aspx">AP CORE Dashboard</a></p>
+                </div>
+            </div>
+    
+
+    </div>
+        
+        
+        <div id="adp-rc-section">
+                           <div class="grid-object adp-rc" id="adp-map">
+                <img src="adp-ranking.jpg">
+                <div class="caption">
+                    <p>Source: <a href="http://103.210.73.67/dashboard">Champions of Change Dashboard</a></p>
+                </div>
+            </div>
+        
+        <div class="grid-object adp-rc" id="map2-container">
+                <img id="map-2" src="coalfields.png">
+                </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(".grid-object").click(function() {
+        $(".grid-object").not(this).removeClass("big");
+        $(this).toggleClass("big");
+
+    });
+
+    $("#high-frequency-selector").click(function() {
+        $(".grid-object:not(.high-frequency)").removeClass("active");
+        $(".high-frequency").toggleClass("active");
+        $("a:not(#high-frequency-selector)").removeClass("active-link");
+        $(this).toggleClass("active-link");
+    });
+
+
+        $("#star-rating-selector").click(function() {
+        $(".star-rating").toggleClass("active");
+        $(this).toggleClass("active-link");
+    });
+
+            $("#ranking-selector").click(function() {
+        $(".ranking").toggleClass("active");
+        $(this).toggleClass("active-link");
+    });
+
+    
+                $("#bar-chart-selector").click(function() {
+        $(".bar-chart").toggleClass("active");
+        $(this).toggleClass("active-link");
+    });
+
+    $("#low-frequency-selector").click(function() {
+        $(".low-frequency").toggleClass("active");
+        $(this).toggleClass("active-link");
+
+    });
+
+
+    $("#trad-dev-selector").click(function() {
+        $(".trad-dev").toggleClass("active");
+        $(this).toggleClass("active-link");
+
+    });
+    
+        $("#heatmap-selector").click(function() {
+        $(".heatmap").toggleClass("active");
+        $(this).toggleClass("active-link");
+
+    });
+
+
+        $("#leapfrog-selector").click(function() {
+        $(".leapfrog").toggleClass("active");
+        $(this).toggleClass("active-link");
+
+    });
+    
+    $("#map-changer").click(function() {
+        if ($("#map-2").attr("src") == "coalfields.png") {
+        $("#map-2").attr("src", "red-corridor.jpg");
+        }
+        else {
+            $("#map-2").attr("src", "coalfields.png");
+        }
+    })
+
+    $("#narrative").on('resize scroll', function() {
+        var scroll = $("#narrative").scrollTop();
+        if ($("#title").isInViewport()) {
+            $("body").removeClass().addClass("white");
+                                $("#adp-rc-section, #leapfrog-section").removeClass("flex-active");
+                                                    $(".adp-rc").removeClass("active");
+
+
+        }
+
+
+        if ($("#real-time").isInViewport()) {
+            $("body").removeClass().addClass("lightpink");
+                                $("#adp-rc-section, #leapfrog-section").removeClass("flex-active");
+                                                    $(".adp-rc").removeClass("active");
+
+
+        }
+        if ($("#leapfrogging").isInViewport()) {
+            $("body").removeClass().addClass("lightblue");
+                                $("#adp-rc-section").removeClass("flex-active");
+                                $("#leapfrog-section").addClass("flex-active");
+                                                    $(".adp-rc").removeClass("active");
+
+
+
+        }
+                if ($("#competition").isInViewport()) {
+            $("body").removeClass().addClass("lightgreen");
+                                        $("#adp-rc-section, #leapfrog-section").removeClass("flex-active");
+                                                            $(".adp-rc").removeClass("active");
+
+
+        }
+                if ($("#bastar").isInViewport()) {
+            $("body").removeClass().addClass("bastar");
+                    $("#adp-rc-section").addClass("flex-active");
+                    $(".adp-rc").addClass("active");
+        }
+
+                if ($("#bodies").isInViewport()) {
+            $("body").removeClass().addClass("lightpink");
+                    $("#adp-rc-section, #leapfrog-section").removeClass("flex-active");
+                                        $(".adp-rc").removeClass("active");
+
+
+        }
+
+
+
+    })
+
+
+    $.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+</script>
